@@ -145,8 +145,8 @@ img:hover {
 .dropdown {
   display: none;
   position: absolute;
-  top: 9vh;
-  left: 0;
+  top: 5vh;
+  left: 1vh;
   background-color: #eeeeee;
   border: 1px solid black;
   z-index: 1000;
@@ -181,6 +181,9 @@ img:hover {
   width: 73vw;
   height: 300px;
   padding: 91px 0 0 40px;
+  background-image: url(img/bedroom.jpg);
+  /* background-position: bottom; */
+  background-size: cover;
 }
 
 .name-choosen {
@@ -330,6 +333,8 @@ img:hover {
   width: 216px;
   height: 216px;
   background-color: #b0b0b0;
+  background-image: url(img/bed.jpg);
+  background-size: cover;
 }
 
 .price {
