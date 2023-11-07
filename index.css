@@ -11,6 +11,25 @@ h1 {
   font-size: 48px;
 }
 
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer-info__blog a {
+  color: #ffffff;
+}
+
+.header a {
+  color: #000000;
+}
+
+a:hover,
+img:hover {
+  color: rgb(39, 138, 93);
+  cursor: pointer;
+}
+
 .wrapper {
   margin: 0 auto;
   display: flex;
