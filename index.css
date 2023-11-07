@@ -404,3 +404,67 @@ h1 {
   gap: 12px;
   text-decoration: underline;
 }
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .header__row {
+    flex-direction: flex;
+  }
+
+  .header__personalInfo-item p,
+  .catalog_disabled p,
+  .logo,
+  .header__location,
+  .container-menu,
+  .list-multimedia__item:last-child,
+  .list-multimedia__item:nth-child(3),
+  .list-multimedia__item:nth-child(2) {
+    display: none;
+  }
+
+  .catalog__search {
+    width: 30vw;
+  }
+
+  .catalog_disabled {
+    width: 10vw;
+  }
+
+  .header__row {
+    gap: 2vw;
+  }
+
+  .header {
+    padding: 0px 10vw;
+  }
+
+  .content3 .products {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1027px) {
+  .header__row {
+    gap: 1vw;
+  }
+  .list-multimedia__item:last-child,
+  .list-multimedia__item:nth-child(3) {
+    display: none;
+  }
+}
+
+@media (min-width: 1027px) and (max-width: 1327px) {
+  .header__row {
+    gap: 2vw;
+  }
+  .list-multimedia__item:last-child,
+  .products__item:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 1620px) {
+  .content3 {
+    padding: 0px 10vw;
+    display: block;
+  }
+}
