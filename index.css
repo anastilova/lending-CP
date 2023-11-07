@@ -1,0 +1,152 @@
+/* $light-grey: #c4c4c4; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.header {
+  background-color: #eeeeee;
+  padding: 0px 13.5vw;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  width: 100vw;
+}
+
+.container-menu {
+  display: flex;
+  border-bottom: 1px solid #473e3e;
+  width: 73vw;
+}
+
+.header__menu {
+  display: flex;
+  margin: 0 5vw;
+}
+
+.header__menu-item {
+  padding: 13px;
+}
+
+.header__location {
+  padding: 15px;
+}
+
+.header__phone {
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.header__row {
+  width: 73vw;
+  display: flex;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  gap: 40px;
+}
+
+.header__catalog {
+  display: flex;
+}
+
+.catalog_disabled {
+  display: flex;
+  background-color: #000000;
+  color: #ffffff;
+  width: 130px;
+  gap: 15px;
+  padding: 11px;
+  height: 45px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+.catalog__search input {
+  width: 25vw;
+  height: 45px;
+  padding-left: 15px;
+}
+
+.catalog__search button {
+  border: none;
+  height: 42px;
+  width: 42px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+.catalog__search button:focus {
+  border-color: #311c24;
+}
+
+.logo {
+  background-color: #c4c4c4;
+  text-align: center;
+  vertical-align: middle;
+  width: 160px;
+  height: 45px;
+  padding: 5px;
+}
+
+.logo p {
+  color: #414141;
+  font-size: 10px;
+}
+
+.header__row > div:not(:first-child) {
+  display: flex;
+  align-items: center;
+}
+
+.img img {
+  width: 24px;
+  height: 24px;
+}
+
+/* выпадающий элемента меню Частые вопросы начало*/
+.dropdown {
+  display: none;
+  position: absolute;
+  top: 9vh;
+  left: 0;
+  background-color: #eeeeee;
+  border: 1px solid black;
+  z-index: 1000;
+}
+
+.dropdown ul {
+  list-style: none;
+  padding: 0;
+  width: inherit;
+}
+
+.dropdown ul li {
+  padding: 10px;
+  position: inherit;
+}
+
+.header__menu-item {
+  cursor: pointer;
+  position: relative;
+}
+
+/* выпадающий элемента меню Частые вопросы конец*/
